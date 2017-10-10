@@ -1,9 +1,26 @@
-const ws = new WebSocket('ws://localhost:8002');
+$(document).ready(() => init());
 
-ws.onopen = () => {
-    console.log("Connection opened");
+let logsTableBody;
+
+function init() {
+    const ws = new WebSocket('ws://localhost:8002');
+    
+    ws.onopen = () => console.log("Connection opened");
+    
+    ws.onmessage = e => {
+        console.log(e.data);
+        addLog(e.data);
+    }
+    
+    logsTableBody = $('#logs').find('tbody');
 }
 
-ws.onmessage = e => {
-    console.log(e.data);
+function addLog(message) {
+    logsTableBody.prepend(`
+        <tr>
+            <td>0</td>
+            <td>DEBUG</td>
+            <td>${message}</td>
+        </tr>
+    `);
 }

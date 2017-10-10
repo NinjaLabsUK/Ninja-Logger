@@ -35,12 +35,11 @@ udpServer.bind({
 // WS Server setup
 wsServer.on('connection', (ws, request) => {
     console.log("New WS Client");
+    ws.send("Log client added!");
 });
 
 // Express setup
 const publicPath = path.join(__dirname, 'public');
 app.use('/public', express.static(publicPath));
 
-const server = app.listen(SERVER_PORT, () => {
-
-})
+const server = app.listen(SERVER_PORT);

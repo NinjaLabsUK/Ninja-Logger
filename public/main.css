@@ -6,11 +6,20 @@ body {
 header {
     background-color: #000;
     color: #FFF;
-    padding: 10px 15px 10px 15px;
+    padding: 0 15px 0 15px;
+    height: 60px;
+}
+
+header img {
+    float: right;
+    height: 60px;
 }
 
 header h1 {
+    float: left;
     margin: 0;
+    position: relative;
+    top: 18px;
 }
 
 .status {

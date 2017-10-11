@@ -35,7 +35,7 @@ udpServer.bind({
 // WS Server setup
 wsServer.on('connection', (ws, request) => {
     console.log("New WS Client");
-    ws.send("Log client added!");
+    //ws.send("Log client added!");
 });
 
 // Express setup

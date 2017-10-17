@@ -81,7 +81,6 @@ header h1 {
 
 .pure-table {
     width: 100%;
-    table-layout:fixed;
 }
 
 .pure-table td {

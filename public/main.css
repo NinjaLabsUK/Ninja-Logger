@@ -1,11 +1,16 @@
 body {
     padding: 0;
-    font-size: 12px;
-    font-family: 'Titillium Web', sans-serif;
+    font-size: 13px;
+    width: 100%;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 header {
-    background-color: #000;
+    background-color: rgb(32, 32, 32);
     color: #FFF;
     padding: 0 15px 0 15px;
     height: 60px;
@@ -20,25 +25,36 @@ header h1 {
     float: left;
     margin: 0;
     position: relative;
-    top: 11px;
+    top: 15px;
 }
 
-.status {
+.header-secondary {
+    background-color: rgb(32, 32, 32);
+    color: #FFF;
     padding: 10px 15px 10px 15px;
 }
 
-.container {
-    padding: 0 10px 0 10px;
+.details {
+    font-size: 16px;
 }
 
-.pure-table {
-    width: 100%;
+.details .name {
+    font-weight: bold;
+}
+
+.details .value {
+    margin-right: 15px;
+}
+
+.actions {
+    text-align: right;
 }
 
 .level {
     font-weight: bold;
 }
 
+/* LOG LEVELS */
 .level--debug {
     color: blue;
 }
@@ -53,4 +69,30 @@ header h1 {
 
 .level--error {
     color: red;
+}
+
+/* OVERWRITE PURE CSS */
+.pure-button {
+    background-color: transparent;
+    color: #FFF;
+    border: 1px solid rgb(212, 212, 212);
+    font-weight: bold;
+}
+
+.pure-table {
+    width: 100%;
+    table-layout:fixed;
+}
+
+.pure-table td {
+}
+
+.pure-table thead {
+    font-size: 20px;
+}
+
+.pure-table th {
+    background-color: #FFF;
+    border-bottom: 1px solid #cbcbcb;
+    font-size: 16px;
 }

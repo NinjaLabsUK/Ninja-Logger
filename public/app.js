@@ -43,7 +43,7 @@ function websocketConnect()
                 addLog(log);
             });
         } else {
-            addLog(e.data);
+            console.error("Cannot log data. Must be of type Blob.", e.data);
         }
     }
 }

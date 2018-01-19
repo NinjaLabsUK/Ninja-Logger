@@ -1,0 +1,94 @@
+body {
+    padding: 0;
+    font-size: 13px;
+    width: 100%;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+header {
+    background-color: rgb(32, 32, 32);
+    color: #FFF;
+    padding: 0 15px 0 15px;
+    height: 60px;
+}
+
+header img {
+    float: right;
+    height: 60px;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    position: relative;
+    top: 15px;
+}
+
+.header-secondary {
+    background-color: rgb(32, 32, 32);
+    color: #FFF;
+    padding: 10px 15px 10px 15px;
+}
+
+.details {
+    font-size: 16px;
+}
+
+.details .name {
+    font-weight: bold;
+}
+
+.details .value {
+    margin-right: 15px;
+}
+
+.actions {
+    text-align: right;
+}
+
+.level {
+    font-weight: bold;
+}
+
+/* LOG LEVELS */
+.level--debug {
+    color: blue;
+}
+
+.level--info {
+    color: green;
+}
+
+.level--warning {
+    color: orange;
+}
+
+.level--error {
+    color: red;
+}
+
+/* OVERWRITE PURE CSS */
+.pure-button {
+    background-color: transparent;
+    color: #FFF;
+    border: 1px solid rgb(212, 212, 212);
+    font-weight: bold;
+}
+
+.pure-table {
+    width: 100%;
+}
+
+.pure-table thead {
+    font-size: 20px;
+}
+
+.pure-table th {
+    background-color: #FFF;
+    border-bottom: 1px solid #cbcbcb;
+    font-size: 16px;
+}
